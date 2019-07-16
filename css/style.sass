@@ -1,0 +1,316 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: "Open Sans"
+
+.bienvenidos 
+    background-image: url("../images/main.png")
+    background-size: contain
+    background-repeat: no-repeat
+    background-color: #181F1C
+    background-position: 0 3.2rem
+    height: 100vh
+
+.contain
+    height: 100%
+
+.nav
+    background-color: #495057
+    color: rgba(255, 255, 255, 0.5)
+    width: 100%
+    padding-top: 0
+    padding-bottom: 0
+
+.navbar-brand
+    font-size: 1.8rem
+
+.navbar-light 
+    .navbar-nav 
+        .nav-link 
+            color: #F6F1F1
+            font-size: 1.4rem
+
+
+.navbar-light 
+    .navbar-brand
+        color: #f8f9fa
+
+.navbar-light 
+    .navbar-brand:hover 
+        color: #F6F1F1
+        font-size: 1.8rem
+
+.navbar-toggler-icon
+    color: #F6F1F1
+
+.navbar-light 
+    .navbar-toggler
+        background-color: rgba(25, 25, 31, 0.46)
+
+
+
+.navbar-nav 
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    -webkit-box-orient: vertical
+    -webkit-box-direction: normal
+    -ms-flex-direction: column
+    flex-direction: column
+    padding-left: 0
+    margin-bottom: 0
+    list-style: none
+
+div
+    .collapse .navbar-collapse
+        transition: all 1s
+
+.texto-bienvenidos
+    text-align: center
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    align-items: center
+    position: relative
+    top: 12rem
+    height: 25rem
+    p
+        color: #f8f9fa
+        font-size: 2.6rem
+
+    h1
+        color: #f8f9fa
+        font-size: 5rem
+        font-weight: 300
+    a
+        padding: .7rem
+        background-color: #EC4E20
+        font-size: 2rem
+        text-decoration: none
+
+.btn-primary:hover
+    color: #fff
+    background-color: #EC4E20
+    border-color: #0062cc
+
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle
+    color: black
+    background-color: #F6F1F1
+    border-color: #005cbf
+
+
+
+
+
+.somos
+    background-color: #EC4E20
+    color: #F6F1F1
+    padding-top: 4rem
+    padding-bottom: 2.3rem
+    .contain2
+        h2
+            font-size: rem 
+        p
+            margin: 0
+            font-size: 2rem
+        img
+            border-radius: 100%
+        button
+            padding: .7rem
+            background-color: #F6F1F1
+            font-size: 1.7rem
+            text-decoration: none
+            color: black
+            border: none
+            box-shadow: 0 0 .5px .1px blue
+            font-weight: 400
+button:hover
+    background-color: #F6F1F1
+
+.row
+    margin: 0
+
+.services
+    padding-top: 3.3rem
+    padding-bottom: 2.5rem
+    h2
+        font-size: 3rem
+        font-weight: 900
+
+.contain3
+    p
+        font-size: 1.8rem
+    h3
+        font-weight: 900
+        font-size: 2.4rem
+
+.services
+    .fas 
+        color: #EC4E20
+        font-size: 6rem
+    .fab
+        color: #EC4E20
+        font-size: 6.5rem
+
+
+.proyectos
+    background-color: #000022
+    color: #F6F1F1
+    padding-top: 3.3rem
+    padding-bottom: 3.3rem
+    a:hover img
+        transition: all .5s ease
+        transform: scale(1.1)
+        z-index: 100000
+
+.pie
+    background-color: #E28413
+    font-size: 1rem
+    width: 100%
+    h2
+        font-size: 3rem
+        padding-top: 3rem
+        padding-bottom: 3rem
+
+.contain5
+    padding-top: 1px
+    padding-bottom: 3rem
+    width: 50%
+    height: 80%
+    color: #F6F1F1
+    .redes
+        margin-bottom: 3rem
+    .social
+        margin-left: .5rem
+        .fab
+            color: blue
+            font-size: 4rem
+
+
+.row
+    padding-bottom: 3rem
+
+.contain6
+    color: #F6F1F1
+    width: 50% 
+    margin-bottom: 2rem
+    form
+        button
+            font-size: 1.5rem
+
+.form-control 
+    display: inline-block
+    width: 83%
+
+.preguntas
+    .formulario
+        height: calc(2.5em + 0.75rem + 2px) !important
+
+.cierre
+    background-color: #181F1C
+    color: white
+    margin-bottom: 1.5rem
+    margin-top: 1.5rem
+    h2
+        font-size: 1.5rem
+        a
+            color: #EC4E20
+
+
+
+@media (min-width: 992px)
+    html
+        font-size: 18px
+    .navbar-brand
+        display: inline-block
+        padding-top: 0
+        padding-bottom: 0
+        margin-right: 0
+        font-size: 1.65rem
+        line-height: inherit
+        white-space: nowrap
+        font-weight: bolder
+        position: relative
+        left: 4rem
+        z-index: 10
+    div
+        ul
+            margin-left: auto
+            margin-right: 4rem
+            flex-grow: 0
+            display: flex
+            flex-direction: row
+            justify-content: flex-start
+    .nav-link
+        color: #F6F1F1
+        font-weight: 600
+        font-size: 1.4rem
+    .navbar-light .navbar-nav .nav-link:hover
+        color: #F6F1F1
+        font-weight: 600
+        font-size: 1.4rem
+        background-color: #EC4E20
+    .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus
+        color: #F6F1F1
+        font-weight: 600
+        font-size: 1.4rem
+        color: #f8f9fa
+    .navbar-light .navbar-brand:focus
+        color: #f8f9fa
+        font-weight: 600
+    .bienvenidos 
+        background-image: url("../images/main.png")
+        background-size: cover
+
+
+@media (min-width: 768px)
+    html
+        font-size: 16px
+    .nav-link:hover
+        background-color: #EC4E20
+        padding: 1rem
+        line-height: 1rem
+        color: #F6F1F1
+    .nav
+        padding-top: .1rem !important
+        padding-bottom: .1rem !important
+    .bienvenidos 
+        background-image: url("../images/main.png")
+        background-size: contain
+        background-repeat: no-repeat
+        background-color: #181F1C
+        background-position: 0 3.2rem
+
+@media (min-width: 568px)
+    .nav-link:hover
+        background-color: #EC4E20
+        padding: 1rem
+        line-height: 1rem
+        color: #F6F1F1
+    div
+        .texto-bienvenidos
+            position: relative
+            top: 15rem !important
+    .nav
+        padding-top: .1rem !important
+        padding-bottom: .1rem !important
+    .bienvenidos 
+        background-image: url("../images/main.png")
+        background-size: contain
+        background-repeat: no-repeat
+        background-color: #181F1C
+        background-position: 0 3.2rem
+
+@media (max-width: 568px)
+    .navbar-light .navbar-nav .nav-link:hover
+        color: #F6F1F1
+        font-weight: 600
+        font-size: 1.4rem
+        background-color: #EC4E20
+    .bienvenidos 
+        background-image: url("../images/fondo-bienvenidos.jpg")
+        background-size: cover
+        background-repeat: no-repeat
+        background-color: #181F1C
+        background-position: 0 3.2rem
