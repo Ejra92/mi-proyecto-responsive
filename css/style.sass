@@ -1,8 +1,15 @@
 *
     margin: 0
     padding: 0
+    padding-top: 0.0001px
     box-sizing: border-box
     font-family: "Open Sans"
+
+html
+    padding-left: 2rem
+    padding-right: 2rem
+    background-color: #F2F2F2
+
 
 .bienvenidos 
     background-image: url("../images/main.png")
@@ -12,6 +19,8 @@
     background-position: 0 3.2rem
     height: 100vh
 
+.contain
+    height: 100%
 
 .nav
     background-color: #495057
@@ -66,6 +75,7 @@ div
 
 .texto-bienvenidos
     text-align: center
+    width: 100%
     display: flex
     flex-direction: column
     justify-content: space-around
@@ -86,6 +96,7 @@ div
         background-color: #EC4E20
         font-size: 2rem
         text-decoration: none
+        border-radius: 11px
 
 .btn-primary:hover
     color: #fff
@@ -113,21 +124,26 @@ h2
     padding-bottom: 2.3rem
     .contain2
         h2
-            font-size: rem 
+            font-size: 3rem 
+            padding-bottom: 1rem
         p
             margin: 0
             font-size: 2rem
+            padding-bottom: 2rem
         img
             border-radius: 100%
+            padding-bottom: 1rem
         button
             padding: .7rem
-            background-color: #F6F1F1
-            font-size: 1.7rem
+            background-color: #181F1C
+            font-size: 2.5rem
             text-decoration: none
-            color: black
+            color: #F7F7F2
             border: none
-            box-shadow: 0 0 .5px .1px blue
             font-weight: 400
+            border-radius: 12px
+            border-top-left-radius: 10px
+
 button:hover
     background-color: #F6F1F1
 
@@ -143,6 +159,7 @@ button:hover
 
 .contain3
     p
+        padding-top: 1.5rem
         font-size: 1.8rem
     h3
         font-weight: 900
@@ -150,9 +167,11 @@ button:hover
 
 .services
     .fas 
+        padding-top: 1.5rem
         color: #EC4E20
         font-size: 6rem
     .fab
+        padding-top: 1.5rem
         color: #EC4E20
         font-size: 6.5rem
 
@@ -162,13 +181,15 @@ button:hover
     color: #F6F1F1
     padding-top: 3.3rem
     padding-bottom: 3.3rem
+    h2
+        font-size: 3rem
     a:hover img
         transition: all .5s ease
         transform: scale(1.1)
         z-index: 100000
 
 .pie
-    background-color: #E28413
+    background-color: #EC4E20
     font-size: 1rem
     width: 100%
     h2
@@ -181,24 +202,26 @@ button:hover
     padding-bottom: 3rem
     width: 50%
     height: 80%
-    color: #F6F1F1
+    color: #181F1C
     .redes
         margin-bottom: 3rem
     .social
-        margin-left: .5rem
+        position: relative
+        right: .3rem
+        margin-left: .4rem
         .fab
-            color: blue
+            color: #F7F7F2
             font-size: 4rem
 
 
-.row
-    padding-bottom: 3rem
-
 .contain6
-    color: #F6F1F1
+    color: #181F1C
     width: 50% 
     margin-bottom: 2rem
+    font-size: 1.5rem
+    font-weight: 600
     form
+        font-size: 2rem
         button
             font-size: 1.5rem
 
@@ -206,19 +229,47 @@ button:hover
     display: inline-block
     width: 83%
 
-.preguntas
-    .formulario
-        height: calc(2.5em + 0.75rem + 2px) !important
-
 .cierre
     background-color: #181F1C
-    color: white
+    color: #F7F7F2
     h2
         font-size: 1.5rem
+        padding-top: 1rem
+        padding-bottom: 1rem
         a
             color: #EC4E20
 
 
+
+@media (min-width: 1200px)
+    .texto-bienvenidos
+        padding-right: 1rem
+        width: 100%
+        display: flex
+        flex-direction: column
+        justify-content: space-around
+        align-items: flex-end
+        position: relative
+        top: 25%
+        left: 0
+        height: 20rem
+        p
+            color: #f8f9fa
+            font-size: 3rem
+        h1
+            color: #f8f9fa
+            font-size: 2.5rem
+            font-weight: 300
+            display: inline-block
+            margin-right: 2rem
+        a
+            padding: .7rem
+            background-color: #EC4E20
+            font-size: 1.5rem
+            text-decoration: none
+            border-radius: 11px
+            position: relative
+            right: 10%
 
 @media (min-width: 992px)
     html
@@ -289,10 +340,6 @@ button:hover
         padding: 1rem
         line-height: 1rem
         color: #F6F1F1
-    div
-        .texto-bienvenidos
-            position: relative
-            top: 15rem !important
     .nav
         padding-top: .1rem !important
         padding-bottom: .1rem !important
@@ -304,6 +351,8 @@ button:hover
         background-position: 0 3.2rem
 
 @media (max-width: 568px)
+    html
+        font-size: 10px
     .navbar-light .navbar-nav .nav-link:hover
         color: #F6F1F1
         font-weight: 600
@@ -315,3 +364,15 @@ button:hover
         background-repeat: no-repeat
         background-color: #181F1C
         background-position: 0 3.2rem
+    .nav-link:hover
+        background-color: #EC4E20
+        padding: 1rem
+        line-height: 1rem
+        color: #F6F1F1
+    div
+        .texto-bienvenidos
+            position: relative
+            top: 15rem !important
+    .nav
+        padding-top: .1rem !important
+        padding-bottom: .1rem !important

@@ -1,9 +1,15 @@
 * {
   margin: 0;
   padding: 0;
+  padding-top: 0.0001px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Open Sans"; }
+
+html {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: #F2F2F2; }
 
 .bienvenidos {
   background-image: url("../images/main.png");
@@ -12,6 +18,9 @@
   background-color: #181F1C;
   background-position: 0 3.2rem;
   height: 100vh; }
+
+.contain {
+  height: 100%; }
 
 .nav {
   background-color: #495057;
@@ -58,6 +67,7 @@ div .collapse .navbar-collapse {
 
 .texto-bienvenidos {
   text-align: center;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -84,7 +94,8 @@ div .collapse .navbar-collapse {
     padding: 0.7rem;
     background-color: #EC4E20;
     font-size: 2rem;
-    text-decoration: none; }
+    text-decoration: none;
+    border-radius: 11px; }
 
 .btn-primary:hover {
   color: #fff;
@@ -117,22 +128,25 @@ h2 {
   padding-top: 4rem;
   padding-bottom: 2.3rem; }
   .somos .contain2 h2 {
-    font-size: rem; }
+    font-size: 3rem;
+    padding-bottom: 1rem; }
   .somos .contain2 p {
     margin: 0;
-    font-size: 2rem; }
+    font-size: 2rem;
+    padding-bottom: 2rem; }
   .somos .contain2 img {
-    border-radius: 100%; }
+    border-radius: 100%;
+    padding-bottom: 1rem; }
   .somos .contain2 button {
     padding: 0.7rem;
-    background-color: #F6F1F1;
-    font-size: 1.7rem;
+    background-color: #181F1C;
+    font-size: 2.5rem;
     text-decoration: none;
-    color: black;
+    color: #F7F7F2;
     border: none;
-    -webkit-box-shadow: 0 0 0.5px 0.1px blue;
-            box-shadow: 0 0 0.5px 0.1px blue;
-    font-weight: 400; }
+    font-weight: 400;
+    border-radius: 12px;
+    border-top-left-radius: 10px; }
 
 button:hover {
   background-color: #F6F1F1; }
@@ -148,15 +162,18 @@ button:hover {
     font-weight: 900; }
 
 .contain3 p {
+  padding-top: 1.5rem;
   font-size: 1.8rem; }
 .contain3 h3 {
   font-weight: 900;
   font-size: 2.4rem; }
 
 .services .fas {
+  padding-top: 1.5rem;
   color: #EC4E20;
   font-size: 6rem; }
 .services .fab {
+  padding-top: 1.5rem;
   color: #EC4E20;
   font-size: 6.5rem; }
 
@@ -165,6 +182,8 @@ button:hover {
   color: #F6F1F1;
   padding-top: 3.3rem;
   padding-bottom: 3.3rem; }
+  .proyectos h2 {
+    font-size: 3rem; }
   .proyectos a:hover img {
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
@@ -173,7 +192,7 @@ button:hover {
     z-index: 100000; }
 
 .pie {
-  background-color: #E28413;
+  background-color: #EC4E20;
   font-size: 1rem;
   width: 100%; }
   .pie h2 {
@@ -186,40 +205,79 @@ button:hover {
   padding-bottom: 3rem;
   width: 50%;
   height: 80%;
-  color: #F6F1F1; }
+  color: #181F1C; }
   .contain5 .redes {
     margin-bottom: 3rem; }
   .contain5 .social {
-    margin-left: 0.5rem; }
+    position: relative;
+    right: 0.3rem;
+    margin-left: 0.4rem; }
     .contain5 .social .fab {
-      color: blue;
+      color: #F7F7F2;
       font-size: 4rem; }
 
-.row {
-  padding-bottom: 3rem; }
-
 .contain6 {
-  color: #F6F1F1;
+  color: #181F1C;
   width: 50%;
-  margin-bottom: 2rem; }
-  .contain6 form button {
-    font-size: 1.5rem; }
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  font-weight: 600; }
+  .contain6 form {
+    font-size: 2rem; }
+    .contain6 form button {
+      font-size: 1.5rem; }
 
 .form-control {
   display: inline-block;
   width: 83%; }
 
-.preguntas .formulario {
-  height: calc(2.5em + 0.75rem + 2px) !important; }
-
 .cierre {
   background-color: #181F1C;
-  color: white; }
+  color: #F7F7F2; }
   .cierre h2 {
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem; }
     .cierre h2 a {
       color: #EC4E20; }
 
+@media (min-width: 1200px) {
+  .texto-bienvenidos {
+    padding-right: 1rem;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    position: relative;
+    top: 25%;
+    left: 0;
+    height: 20rem; }
+    .texto-bienvenidos p {
+      color: #f8f9fa;
+      font-size: 3rem; }
+    .texto-bienvenidos h1 {
+      color: #f8f9fa;
+      font-size: 2.5rem;
+      font-weight: 300;
+      display: inline-block;
+      margin-right: 2rem; }
+    .texto-bienvenidos a {
+      padding: 0.7rem;
+      background-color: #EC4E20;
+      font-size: 1.5rem;
+      text-decoration: none;
+      border-radius: 11px;
+      position: relative;
+      right: 10%; } }
 @media (min-width: 992px) {
   html {
     font-size: 18px; }
@@ -305,10 +363,6 @@ button:hover {
     line-height: 1rem;
     color: #F6F1F1; }
 
-  div .texto-bienvenidos {
-    position: relative;
-    top: 15rem !important; }
-
   .nav {
     padding-top: 0.1rem !important;
     padding-bottom: 0.1rem !important; }
@@ -320,6 +374,9 @@ button:hover {
     background-color: #181F1C;
     background-position: 0 3.2rem; } }
 @media (max-width: 568px) {
+  html {
+    font-size: 10px; }
+
   .navbar-light .navbar-nav .nav-link:hover {
     color: #F6F1F1;
     font-weight: 600;
@@ -331,6 +388,20 @@ button:hover {
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #181F1C;
-    background-position: 0 3.2rem; } }
+    background-position: 0 3.2rem; }
+
+  .nav-link:hover {
+    background-color: #EC4E20;
+    padding: 1rem;
+    line-height: 1rem;
+    color: #F6F1F1; }
+
+  div .texto-bienvenidos {
+    position: relative;
+    top: 15rem !important; }
+
+  .nav {
+    padding-top: 0.1rem !important;
+    padding-bottom: 0.1rem !important; } }
 
 /*# sourceMappingURL=style.css.map */
